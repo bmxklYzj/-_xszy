@@ -1,0 +1,79 @@
+
+/*footer*/
+.featurette img{
+    height: 300px;
+}
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.footer{
+    height: 50px;
+    background-color: #27AE61;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.footer a{
+    color: aqua;
+    font-size: 16px;
+}
+.footer p{
+    padding: 12px 0px 0px 0px;
+}
+/*.myfooter .myfooter-bottombar{*/
+    /*position: absolute;*/
+/*}*/
+
+
+/*以下是login.html和register.html的css*/
+.form-group{
+    width: 300px;
+    float: left;
+}
+.form-group .form-control{
+    width: 300px;
+}
+.container-register{
+    padding-left: 150px;
+    width: 700px;
+    margin-top: 30px;
+}
+.container-register .reset{
+    float:left;
+    width: 100px;
+    margin-top: 30px;
+}
+.container-register .login{
+    float: left;
+    margin-left: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+.container-register h3{
+    color: #27AE61;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+.container-register .stuinfo{
+    float: left;
+    padding-top: 30px;
+    padding-left: 10px;
+    color: red;
+}
+
+/*login*/
+
+.container-login h3{
+    padding-left: 0px;
+    margin: 60px auto;
+}
+.container-login .reset,.login{
+    margin-top: 30px;
+}

@@ -1,0 +1,103 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.container{
+    /*width: 80%;*/
+    margin: 0 auto;
+}
+/*顶部css*/
+.container-fluid{
+    background-color: #c5d9e8;
+}
+.info{
+    height: 200px;
+    padding: 50px;
+}
+.info-left{
+    width: 40%;
+    padding: 20px;
+    padding-left: 10%;
+    float: left;
+}
+.info-right{
+    width: 60%;
+    padding-left: 19%;
+    float: left;
+}
+.info-right h3{
+    margin-top: 10px;
+}
+.info-right .shuzi-yanse{
+    color: #27AE61;
+    font-size: 1.5em;
+}
+
+
+.row{
+    width: 100%;
+    height: 200px;
+    border: 1px #DDDDDD solid;
+    margin: 10px auto;
+}
+.row img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    float: left;
+
+}
+.row .thumbnail{
+    width: 30%;
+}
+
+.row .thumbnail .caption{
+    float: left;
+}
+.row .img{
+    margin: 10px;
+}
+.row .text{
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+}
+.row .text h3{
+    color: #27AE61;
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 5px;
+}
+.row .text p{
+    color: #000;
+    width: 100%;
+    height: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    /*white-space: nowrap;*/
+}
+.row .jindu{
+    width: 100%;
+    float: left;
+}
+.row .shuzi{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+}
+.row .shuzi h3{
+    margin-top: 0px;
+}
+.row .link{
+    height: 150px;
+    width: 55%;
+    float: left;
+}
+.row .shuzi .shuzi-yanse{
+    color: #27AE61;
+    font-size: 1.5em;
+}
