@@ -1,0 +1,132 @@
+/*禁止拖拽视频的css，仅注册用户使用*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.flv{
+    width: 640px;
+    height: 370px;
+    background-color:#000;
+}
+#fullScreenBtn{
+    float: right;
+}
+#playBtn{
+    float: right;
+    margin-right: 5px;
+}
+
+.flv .control{
+    width: 100%;
+    height: 30px;
+}
+.flv .control #fullScreenBtn{
+    background-color: #27AE61;
+    border-radius: 8px;
+}
+.flv .control #playBtn{
+    background-color: #27AE61;
+    border-radius: 8px;
+}
+
+body div.flv video.video
+{
+    width: 100%;
+    height: 100%;
+}
+
+:-webkit-full-screen {
+
+}
+
+:-moz-full-screen {
+
+}
+
+:-ms-fullscreen {
+
+}
+
+:-o-fullscreen {
+
+}
+
+:full-screen {
+
+}
+
+:fullscreen {
+
+}
+
+:-webkit-full-screen video {
+    width: 100%;
+    height: 100%;
+}
+:-moz-full-screen video{
+    width: 100%;
+    height: 100%;
+}
+:-moz-full-screen video{
+    width: 100%;
+    height: 100%;
+}
+
+
+#progressWrap{
+    background-color: black;
+    height: 25px;
+    /*cursor: pointer;*/
+}
+#playProgress{
+    background-color: #27AE61;
+    width: 0px;
+    height: 25px;
+    border-right: 2px solid blue;
+}
+#showProgress{
+    background-color: ;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+
+/*//以下是左侧弹出是否调到上次记录处css*/
+#div1 {
+    width: 150px;
+    height: 200px;
+    background-color: #81c99b;
+    position: fixed;
+    /*left: -150px;*/
+    left: 0px;
+    bottom: 0px;
+}
+
+#div1 span {
+    width: 20px;
+    height: 70px;
+    line-height: 23px;
+    background: #09C;
+    position: fixed;
+    right: -20px;
+    top: 70px;
+}
+#div1 p{
+    font-size: 1.8em;
+    color: #2B333F;
+    margin-bottom: 20px;
+}
+#div1 button {
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: #5CB85C;
+    border: 1px solid #398439;
+}
+#div1 button:hover{
+    background-color: #449D44;
+    cursor: pointer;
+}

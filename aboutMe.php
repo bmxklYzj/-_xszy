@@ -34,7 +34,7 @@ $s=intval($sumTime%60);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>查看我的资料和播放记录</title>
+    <title>个人资料和播放记录</title>
     <link href="../css/style.css" type="text/css" rel="stylesheet">
 
     <link href="../bannter/bannter.css" type="text/css" rel="stylesheet" />
@@ -72,6 +72,7 @@ $s=intval($sumTime%60);
                     <td><?php echo "$user_name"; ?></td>
                 </tr>
             </table>
+            <a href="editPassword.php"><button class="btn btn-success ">修改密码</button></a>
         </div>
         <div class="info-right">
             <h3>已观看视频总个数：<span class="shuzi-yanse"><?php echo "$sum" ?></span></h3>
@@ -137,7 +138,7 @@ $s=intval($sumTime%60);
                     </div>
                     <div class="jindu">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                            <div class="progress-bar progress-bar-success  progress-bar-striped" role="progressbar" aria-valuenow="40"
                                  aria-valuemin="0" aria-valuemax="100" style="width: <?php echo "$video_progress"; ?>%">
                                 <span class="sr-only">40% Complete (success)</span>
                             </div>

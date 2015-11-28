@@ -30,43 +30,39 @@
             var password1 = $("#password1").val();
             var password2 = $("#password2").val();
 
+
             //ajax后台提交用户名判断是否有重复
             $("#stuid").blur(function(){
-                var xuehao=$("#stuid").val();
 
-                $.ajax({
-                    type:'GET',
-                    url:"register_success.php?act=check&xuehao="+xuehao,
-                    dataType:"text",
-                    success:function(data){
-                        //alert(data);
-                        if(data==1){
-                            $("#stuid_tx").html("学号已经存在！");
-                            $("#uu").html("1");
-                        }else{
-                            $("#stuid_tx").html("");
-                            $("#uu").html("2");
+                stuid = $("#stuid").val();
+                if(stuid == ""){
+//                    alert("请输入学号！")
+                    $("#stuid_tx").html("请输入学号！");
+                }
+                else if(!(/^\d{10}$/.test(stuid))){
+                    $("#stuid_tx").html("学号必须是十位数字！");
+//                    alert("学号必须是十位数字！");
+                }
+                else{
+                    $.ajax({
+                        type:'GET',
+                        url:"register_success.php?act=check&xuehao="+stuid,
+                        dataType:"text",
+                        success:function(data){
+                            //alert(data);
+                            if(data==1){
+                                $("#stuid_tx").html("学号已经存在！");
+                                $("#uu").html("1");
+                            }else{
+                                $("#stuid_tx").html("");
+                                $("#uu").html("2");
+                            }
                         }
-                    }
-                });
+                    });
+                }
             });
 
-            //验证学号
-//            $("#stuid").blur(function(){
-//
-//                stuid = $("#stuid").val();
-//                if(stuid == ""){
-////                    alert("请输入学号！")
-//                    $("#stuid_tx").html("请输入学号！");
-//                }
-//                else if(!(/^\d{10}$/.test(stuid))){
-//                    $("#stuid_tx").html("学号必须是十位数字！");
-////                    alert("学号必须是十位数字！");
-//                }
-//                else{
-//                    $("#stuid_tx").html("");
-//                }
-//            });
+
 
             //验证姓名
             $("#username").blur(function () {
@@ -112,12 +108,13 @@
                     $("#password2_tx").html("两次输入的密码不一致，请重新输入");
                     $("#password1").html("");
                     $("#password2").html("");
+                    $("#uu").html("1");
                 }else{
                     $("#password2_tx").html("");
                 }
             });
 
-        })
+        });
 
     </script>
 
@@ -125,7 +122,7 @@
 </head>
 <body>
 <div class="container container-register">
-    <h3>欢迎注册精品课程网</h3>
+    <h3>欢迎注册学生之友翱翔视频网</h3>
 
     <form action="register_success.php" method="post" onsubmit="return registerCheck()">
 
@@ -163,16 +160,16 @@
 
 <!-- footer-->
 <?php
-    require_once "footer.php";
+require_once "footer.php";
 ?>
 
 <!--<div >-->
-    <!--<footer class="footer navbar-fixed-bottom">-->
-        <!--<div class="container">-->
-            <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
-            <!--<p>© 西北工业大学 软件测试精品课  <a href="http://www.nwpu.edu.cn"> 西北工业大学</a></p>-->
-        <!--</div>-->
-    <!--</footer>-->
+<!--<footer class="footer navbar-fixed-bottom">-->
+<!--<div class="container">-->
+<!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+<!--<p>© 西北工业大学 软件测试精品课  <a href="http://www.nwpu.edu.cn"> 西北工业大学</a></p>-->
+<!--</div>-->
+<!--</footer>-->
 <!--</div>-->
 </body>
 </html>

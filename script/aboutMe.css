@@ -21,6 +21,13 @@ body{
     padding-left: 10%;
     float: left;
 }
+
+/*修改密码按钮css*/
+.editPassword{
+    /*float: right;*/
+    margin: 50px;
+}
+
 .info-right{
     width: 60%;
     padding-left: 19%;
@@ -101,3 +108,5 @@ body{
     color: #27AE61;
     font-size: 1.5em;
 }
+
+
